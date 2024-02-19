@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}Your Page Title{% endblock %}</title>
-  <link rel="stylesheet" href="/css/screen.css">
-  <link rel="stylesheet" href="/css/style.css"> <!-- Add your new CSS file -->
-</head>
-
+<html>
 <body>
-
-  <!-- Header Section -->
-  {% include 'header.liquid' %}
-
-  <!-- Main Content Section -->
-  <section class="main-content">
-    {% block content %}{% endblock %}
-  </section>
-
-  <!-- Footer Section -->
-  {% include 'footer.liquid' %}
-
+{{ content }}
 </body>
-
 </html>
