@@ -1,7 +1,12 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+
+  <h1>Welcome to Planetary Playing Cards</h1>
+
+  <!-- Include the planet cards using the partial -->
+  <section class="main-content">
+    {% include 'planet-card.liquid' %}
+  </section>
+{% endblock %}

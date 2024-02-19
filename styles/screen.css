@@ -48,3 +48,41 @@ h1 strong {
 img.about {
     opacity: 0.5;
 }
+
+/* Planetary Cards Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planet-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #37474F; /* Example background color for the cards */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.planet-avatar {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #FFD54F; /* Example background color for the planet avatar */
+    border-radius: 50%;
+}
+
+.planet-name {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.planet-au {
+    font-size: 1em;
+    color: #B0BEC5; /* Example color for AU information */
+}
+
+/* Hover effect for planet cards */
+.planet-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
