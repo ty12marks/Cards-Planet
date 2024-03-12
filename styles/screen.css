@@ -1,46 +1,26 @@
-/* src/_includes/assets/css/screen.css */
-
-.card {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
+.planetary-playing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 0;
   }
   
-  .card:hover {
-    transform: scale(1.1);
-  }
-  
-  .circle {
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
+  .planetary-playing-cards .planet {
+    background-color: #f2f2f2;
     border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .planet-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .card:hover .planet-details {
-    opacity: 1;
-  }
-  
-  .rectangle {
-    width: 100%;
-    height: 30px;
-    background-color: #eee;
-  }
-  
-  .sun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 1rem;
     width: 200px;
   }
   
+  .planetary-playing-cards .planet h2 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
